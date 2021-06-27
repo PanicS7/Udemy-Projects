@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Udemy course: https://www.udemy.com/course/html-css-javascript-build-landing-page-with-modal-forms/ -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Landing Page with Modal Forms</title>
+</head>
+<body>
+    <div id="buttons">
+        <button id="loginBtn">Login</button>
+        <button id="signUpBtn">Sign Up</button>
+    </div>
+    <div id="modalOverlay"></div>
+    <div id="loginModal">
+        <h2>CodeAndCreate</h2>
+        <p>LOGIN</p>
+        <i class="fas fa-times"></i>
+        <div class="input">
+            <div class="inputGroup">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Username" />
+            </div>
+            <div class="inputGroup">
+                <i class="fas fa-key"></i>
+                <input type="password" placeholder="Password" />
+            </div>
+            <button>LOGIN</button>
+        </div>
+    </div>
+    <div id="signUpModal">
+        <h2>CodeAndCreate</h2>
+        <p>JOIN US</p>
+        <i class="fas fa-times"></i>
+        <div class="input">
+            <div class="inputGroup">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Username" />
+            </div>
+            <div class="inputGroup">
+                <i class="far fa-envelope"></i>
+                <input type="email" placeholder="Email" />
+            </div>
+            <div class="inputGroup">
+                <i class="fas fa-key"></i>
+                <input type="password" placeholder="Password" />
+            </div>
+            <button>SIGN UP</button>
+        </div>
+    </div>
+    <div id="text">
+        <h1>CodeAndCreate</h1>
+        <p>Learn how to code</p>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
