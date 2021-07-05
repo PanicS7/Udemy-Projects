@@ -1,0 +1,277 @@
+﻿/* Reset default */
+body {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Header - logo, icons, links */
+header {
+}
+
+#header-container {
+    display: flex;
+}
+
+/* Icons */
+#social {
+    /* 
+  trick to push elements with display flex to right using margin-left: auto
+  */
+    margin-left: auto;
+    padding-top: 15px;
+}
+
+#social .fab {
+    font-size: 50px;
+    cursor: pointer;
+}
+
+#social .fab:hover {
+    transform: scale(1.1);
+}
+
+.fa-facebook-square {
+    color: #3b5998;
+}
+
+.fa-twitter-square {
+    color: #00acee;
+}
+
+.fa-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Logo */
+#logo {
+    margin-left: 20px;
+}
+
+#logo:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#logo h1 {
+    font-family: cursive;
+}
+
+/* Page Link */
+nav {
+    padding-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 5px 5px;
+    background-color: #1E90FF;
+    border: 0;
+    padding: 10px;
+    width: 13%;
+    border-radius: 5px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #1874CD;
+}
+
+hr {
+    margin: 0;
+}
+
+
+/* Main */
+main {
+    margin-top: 0;
+    padding: 50px 10px 10px 10px;
+    background-color: #F5F5F5;
+}
+
+/* Story-section 1 */
+#story {
+    display: flex;
+    text-align: center;
+}
+
+#story article {
+    width: 33.3%;
+    padding: 0 30px;
+}
+
+#story article img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+#story article h3 {
+    font-family: cursive;
+}
+
+/* Section 2 */
+#main-container {
+    margin-top: 50px;
+    display: flex;
+}
+
+/* Aside links */
+aside {
+    width: 25%;
+    height: 300px;
+    padding-right: 50px;
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+aside ul li {
+    display: block;
+    margin: 5px;
+    background-color: #A9A9A9;
+    padding: 10px;
+}
+
+#main-article {
+    width: 50%;
+    height: 300px;
+    padding-right: 10px;
+}
+
+#main-article img {
+    width: 200px;
+    height: 100px;
+    border: 2px solid black;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+#main-article h2 {
+    font-family: cursive;
+}
+
+/* Login */
+#login {
+    width: 25%;
+    height: 300px;
+    border: 1px solid #1E90FF;
+}
+
+.fa-user {
+    font-size: 19px;
+}
+
+#login div {
+    margin: 5px 0;
+    text-align: center;
+}
+
+#login p {
+    text-align: center;
+    padding: 10px;
+    margin-top: 0;
+    background-color: #1E90FF;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    box-sizing: border-box;
+}
+
+#login button {
+    margin: 10px 0;
+    background-color: #1E90FF;
+    color: #fff;
+    border: 0;
+    padding: 10px;
+}
+
+#login button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #1874CD;
+}
+
+#login button:active {
+    background-color: green;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #A9A9A9;
+    color: #fff;
+    padding: 1px 0;
+    position: relative;
+    bottom: 0;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 768px) {
+    nav {
+        margin-left: -30px;
+    }
+
+    nav ul li {
+        width: 25%;
+    }
+
+    #story {
+        display: flex;
+    }
+
+    #story article {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #main-container {
+        display: block;
+    }
+
+    aside {
+        padding: 0 -10px 0 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    aside, #main-article, #login {
+        width: 100%;
+        height: auto;
+    }
+
+    #main-article {
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+        #main-article img {
+            width: 100%;
+        }
+}
+/* PHONES */
+@media only screen and (max-width: 576px) {
+    #story {
+        display: block;
+    }
+}
