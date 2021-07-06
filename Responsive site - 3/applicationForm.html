@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Responsive Template 3 - Application Form</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Homepage</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./studentsData.html">Students Data</a></li>
+            <li><a href="#">Application Form</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./resources.html">Resources</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="center">Application Form</h1>
+        <form>
+            <fieldset>
+                <legend>Personal Information:</legend>
+                <div class="formGroup">
+                    <span>Name: </span>
+                    <input type="text" />
+                </div>
+                <div class="formGroup">
+                    <span>Email: </span>
+                    <input type="email" />
+                </div>
+                <div class="formGroup">
+                    <span>Skype ID: </span>
+                    <input type="text" />
+                </div>
+                <div class="formGroup">
+                    <span>Education/Degree? </span>
+                    <input type="text" />
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Freelancing Information:</legend>
+                <p>Which platforms do you use for freelancing?</p>
+                <input type="checkbox"/>
+                <span>Upwork</span>
+                <input type="checkbox" />
+                <span>Freelancer</span>
+                <input type="checkbox" />
+                <span>Elancer</span>
+                <input type="checkbox" />
+                <span>Reference based work</span>
+                <input type="checkbox" />
+                <span>Other?</span>
+                <input type="text" />
+
+                <p>Which clients do you serve?</p>
+                <input type="checkbox" />
+                <span>Foreign</span>
+                <input type="checkbox" />
+                <span>Local</span>
+
+                <p>What is your core area?</p>
+                <input type="radio" name="coreArea"/>
+                <span>Writer</span>
+                <input type="radio" name="coreArea"/>
+                <span>Developer</span>
+                <input type="radio" name="coreArea"/>
+                <span>Designer</span>
+                <input type="radio" name="coreArea"/>
+                <span>Software Developer </span>
+                <input type="radio" name="coreArea"/>
+                <span>Mobile Developer</span>
+                <input type="radio" name="coreArea"/>
+                <span>Other? </span>
+                <input type="text" name="coreArea"/>
+            </fieldset>
+            <p>What kind of training are you interested (if required):</p>
+            <select>
+                <option>remote training</option>
+                <option>at office</option>
+                <option>home training</option>
+            </select>
+            <p>Do you want to say something about this website?</p>
+            <textarea></textarea>
+            <br/>
+            <button>Submit this Form</button>
+            <button id="reset">Reset</button>
+        </form>
+    </main>
+    <footer>
+        <p>Author <span>Sanja Panic</span>, by <a href="https://www.udemy.com/course/practical-html/" target="_blank">Udemy course</a></p>
+    </footer>
+    <script>
+        var reset = document.getElementById("reset");
+        reset.addEventListener("click", function () {
+            var inputs = document.querySelectorAll("input");
+            for (let i of inputs) {
+                i.value = "";
+            }
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+﻿/* Global styles */
+nav {
+    width: 60vw;
+    margin: auto;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+nav li {
+    margin: auto;
+    border-right: 1px solid black;
+    padding-right: 20px;
+    margin-top: 10px;
+}
+nav li:last-child {
+    border-right: 0;
+    padding-right: 0;
+}
+h1, footer {
+    text-align: center;
+}
+.center {
+    text-align: center;
+}
+/* Gallery */
+#gallery img {
+    width: 250px;
+    height: 200px;
+}
+/* Students Data page*/
+#studentsData {
+    margin: auto;
+    width: 50vw;
+}
+#studentsData {
+    overflow-x: auto; /* to add scroll to table on smaller screens */
+}
+#studentsData table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+#studentsData th {
+    text-align: left;
+}
+#studentsData th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+/* Resources page */
+#resources {
+    width: 90vw;
+    margin: auto;
+}
+@media only screen and (max-width: 600px) {
+    #resources iframe {
+        width: 100%;
+    }
+}

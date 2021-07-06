@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Responsive Template 3 - Contact</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Homepage</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./studentsData.html">Students Data</a></li>
+            <li><a href="./applicationForm.html">Application Form</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="./resources.html">Resources</a></li>
+        </ul>
+    </nav>
+    <h1>Contact Us / Address Information</h1>
+    <form>
+        <div class="formGroup">
+            <span>Your Name:</span>
+            <input type="text" />
+        </div>
+        <div class="formGroup">
+            <span>Your Email:</span>
+            <input type="email" />
+        </div>
+        <div class="formGroup">
+            <span>Subject:</span>
+            <input type="text" />
+        </div>
+        <div class="formGroup">
+            <span>Comments:</span>
+            <textarea></textarea>
+        </div>
+        <button>Send</button>
+        <button id="reset">Reset</button>
+    </form>
+    <p>The postal address for Editorial Policy is:</p>
+    <p><b>BC2 A1, Broadcast Centre<br />201 Wood Lane<br />London W12 7TP</b></p>
+    <p>Email: <a href="mailto:editorial.policy.adviser@bbc.co.uk">editorial.policy.adviser@bbc.co.uk</a></p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2087.898113334222!2d-0.2287976566848404!3d51.514256367063474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760fd6254c3271%3A0x7d4f3333bec1f3b7!2zQnJvYWRjYXN0IENlbnRyZSwgMjAxIFdvb2QgTG4sIExvbmRvbiBXMTIgN1RRLCDQktC10LvQuNC60LAg0JHRgNC40YLQsNC90LjRmNCw!5e0!3m2!1ssr!2srs!4v1625587610232!5m2!1ssr!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <hr />
+    <footer>
+        <p>Author <span>Sanja Panic</span>, by <a href="https://www.udemy.com/course/practical-html/" target="_blank">Udemy course</a></p>
+    </footer>
+    <script>
+        var reset = document.getElementById("reset");
+        reset.addEventListener("click", function () {
+            var inputs = document.querySelectorAll("input");
+            for (let i of inputs) {
+                i.value = "";
+            }
+        });
+
+    </script>
+</body>
+</html>
