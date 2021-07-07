@@ -1,0 +1,59 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+}
+.terminal {
+    margin: 50px auto;
+    width: 350px;
+    height: 250px;
+    color: #fff;
+}
+.tHeader {
+    width: 100%;
+    height: 30px;
+    background-color: #eee;
+    display: flex;
+    border-radius: 10px 10px 0 0;
+    padding-left: 5px;
+}
+.tBody {
+    width: 100%;
+    background-color: #222;
+    height: 210px;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+.btn {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 10px 5px;
+}
+.btnRed {
+    background-color: #f00;
+}
+.btnOrange {
+    background-color: #ff6a00;
+}
+.btnGreen {
+    background-color: #0f0;
+}
+@keyframes lineAnimation {
+    from {
+        color: transparent;
+    }
+
+    to {
+        color: #fff;
+    }
+}
+.line {
+    animation-name: lineAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+

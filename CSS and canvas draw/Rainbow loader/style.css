@@ -1,0 +1,76 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    border: 3px solid black;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.redCircle {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-top: 100px;
+    border-color: red white white white;
+    animation: rotate 2s linear infinite;
+}
+
+.yellowCircle {
+    width: 94px;
+    height: 94px;
+    border-color: yellow white white white;
+    animation: rotate 35s linear infinite;
+}
+
+.greenCircle {
+    width: 88px;
+    height: 88px;
+    border-color: green white white white;
+    animation: rotate 39s linear infinite;
+}
+
+.lightBlueCircle {
+    width: 82px;
+    height: 82px;
+    border-color: lightblue white white white;
+    animation: rotate 42s linear infinite;
+}
+
+.blueCircle {
+    width: 76px;
+    height: 76px;
+    border-color: blue white white white;
+    animation: rotate 42s linear infinite;
+}
+
+.purpleCircle {
+    width: 70px;
+    height: 70px;
+    border-color: purple white white white;
+    animation: rotate 42s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+footer {
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    height: 25px;
+    background-color: orange;
+}

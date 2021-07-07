@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Heart - Canvas</title>
+    <style>
+        canvas {
+            margin: 100px auto;
+            display: block;
+            animation: scale 3s linear infinite;
+        }
+        /* Added animation 27.07.2019 */
+        @keyframes scale {
+            0% {
+                transform: scale(1,1);
+            }
+
+            50% {
+                transform: scale(1.1,1.1);
+            }
+
+            100% {
+                transform: scale(1,1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <canvas id="heart" width="160" height="120"></canvas>
+    <script>
+            var myCanvas = document.getElementById("heart");
+            var heart = myCanvas.getContext("2d");
+
+            // Row 1
+            heart.fillRect(30,0,30,10);
+            heart.fillRect(100,0,30,10);
+            // Row 2
+            heart.fillRect(20,10,10,10);
+            heart.fillRect(60,10,10,10);
+            heart.fillRect(90,10,10,10);
+            heart.fillRect(130,10,10,10);
+              // Shadow
+            heart.fillStyle = "rgb(204,0,0)";
+            heart.fillRect(30,10,10,10);
+              // Red
+            heart.fillStyle = "red";
+            heart.fillRect(40,10,20,10);
+            heart.fillRect(100,10,30,10);
+            // Row 3
+            heart.fillStyle = "black";
+            heart.fillRect(10,20,10,40);
+            heart.fillRect(70,20,20,10);
+            heart.fillRect(140,20,10,40);
+               // Shadow
+            heart.fillStyle = "rgb(204,0,0)";
+            heart.fillRect(20,20,10,40);
+            heart.fillRect(30,20,10,10);
+              // Red
+            heart.fillStyle = "red";
+            heart.fillRect(40,20,30,10);
+            heart.fillRect(90,20,50,10);
+            //Row 4,5,6 Red
+            heart.fillRect(30,30,110,30);
+            // Row 7,8,9,10,11,12 - Black
+            heart.fillStyle = "black";
+            heart.fillRect(20,60,10,10);
+            heart.fillRect(130,60,10,10);
+            heart.fillRect(30,70,10,10);
+            heart.fillRect(120,70,10,10);
+            heart.fillRect(40,80,10,10);
+            heart.fillRect(110,80,10,10);
+            heart.fillRect(50,90,10,10);
+            heart.fillRect(100,90,10,10);
+            heart.fillRect(60,100,10,10);
+            heart.fillRect(90,100,10,10);
+            heart.fillRect(70,110,20,10);
+            // 7,8,9,10,11 Red
+            heart.fillStyle = "red";
+            heart.fillRect(30,60,100,10);
+            heart.fillRect(40,70,80,10);
+            heart.fillRect(50,80,60,10);
+            heart.fillRect(60,90,40,10);
+            // Rest shadow
+            heart.fillStyle = "rgb(204,0,0)";
+            heart.fillRect(30,50,10,20);
+            heart.fillRect(40,60,10,20);
+            heart.fillRect(50,70,10,20);
+            heart.fillRect(60,80,10,20);
+            heart.fillRect(70,90,10,10);
+            heart.fillRect(70,100,20,10);
+            // White
+            heart.fillStyle = "white";
+            heart.fillRect(110,20,10,20);
+            heart.fillRect(120,30,10,20);
+    </script>
+</body>
+</html>
