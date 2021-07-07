@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>All About Coffee - Coffee Survey</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>All About Coffee</h1>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./roasting.html">Roasting</a></li>
+                    <li><a href="./grinding.html">Grinding</a></li>
+                    <li><a href="./brewing.html">Brewing</a></li>
+                    <li><a href="./drinks.html">Drinks</a></li>
+                    <li><a href="#">Coffee Survey</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="survey">
+            <h1>Coffee Survey</h1>
+            <form>
+                <fieldset>
+                    <legend>Personal Information</legend><br />
+                    <label for="name">Your Name</label><br />
+                    <input id="name" name="name" type="text" /><br />
+                    <label for="email">Email Address</label><br />
+                    <input id="email" name="email" type="email" />
+                </fieldset>
+                <fieldset>
+                    <legend>Your Coffee Preferences</legend>
+                    <p>Tell us your coffee preparation methods.</p>
+                    <textarea></textarea>
+                    <p>Do you grind your own beans?</p>
+                    <label for="grindYes">Yes</label>
+                    <input id="grindYes" name="grind" type="radio" /><br />
+                    <label for="grindNo">No</label>
+                    <input id="grindNo" name="grind" type="radio" />
+                    <br />
+                    <p>How do you drink your coffee?</p>
+                    <label for="sugar">with sugar</label>
+                    <input id="sugar" name="drinkWith" type="checkbox" /><br />
+                    <label for="cream">with cream</label>
+                    <input id="cream" name="drinkWith" type="checkbox" />
+                    <br />
+                    <p>What is your favorite coffee drink?</p>
+                    <select>
+                        <option>please select a drink</option>
+                        <option>drip coffee</option>
+                        <option>french press</option>
+                        <option>espresso</option>
+                        <option>latte</option>
+                        <option>flavored</option>
+                    </select>
+                </fieldset>
+                <button>Send Survey</button>
+            </form>          
+        </main>
+        <hr />
+        <footer>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./roasting.html">Roasting</a></li>
+                <li><a href="./grinding.html">Grinding</a></li>
+                <li><a href="./brewing.html">Brewing</a></li>
+                <li><a href="./drinks.html">Drinks</a></li>
+                <li><a href="#">Coffee Survey</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
