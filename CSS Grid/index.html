@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>CSS Grid</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns:5% 1fr 200px 5%;
+            grid-template-rows: 35vh 5% auto auto;
+            grid-gap:20px;
+            grid-template-areas: 
+                "header header header header"
+                ". section . ."
+                ". section aside ." 
+                ". footer footer .";
+        }
+        header {
+            color: #fff;
+            grid-area: header;
+        }
+        header h1 {
+            text-align: center;
+            font-size: 40px;
+            padding-top: 50px;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
+        .img-container {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+            width: 100%;
+        }
+        .img-container img {
+            width: 100%;
+            height: 50vh;
+        }
+        section {
+            grid-area: section;
+            background-color: #fff;
+            padding: 10px;
+            border-left: 1px solid #000;
+        }
+        section .images {
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 150px;
+            grid-gap: 5px;
+        }
+        section img {
+            width:100px;
+            height:100px;
+            object-fit: cover;
+        }
+        aside {
+            grid-area:aside;
+        }
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+        @media only screen and (max-width: 768px) {
+            .container {
+                display: block;
+            }
+            section {
+                border-left: 0;
+            }
+            section .images {
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 150px 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Pine Trees are Tall</h1>
+            <div class="img-container">
+                <img src="./img/pine3.jpg" alt="Pine Tree" />
+            </div>     
+        </header>
+        <section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a enim iaculis, pharetra ligula a, maximus metus. Cras et dictum mauris. Vivamus placerat ligula nisl, sed consequat justo consectetur vitae. Donec varius enim dolor, at lacinia libero elementum nec. Praesent tincidunt elementum commodo. Morbi dignissim a velit quis interdum. Aliquam non fermentum turpis. Phasellus semper justo id ipsum pharetra consectetur. Mauris sollicitudin nisi sed sem bibendum posuere.</p>
+            <div class="images">
+                <img src="./img/pine1.jpg" alt="Pine Tree" />
+                <img src="./img/pine2.jpg" alt="Pine Tree" />
+                <img src="./img/pine-bg.jpg" alt="Pine Tree" />
+                <img src="./img/pine4.jpg" alt="Pine Tree" />
+                <img src="./img/pine5.jpg" alt="Pine Tree" />
+                <img src="./img/pine6.jpg" alt="Pine Tree" />
+            </div>
+            <p>Pellentesque ac volutpat tortor. Donec eu ultricies quam, vitae ullamcorper dolor. Nunc et nunc eu eros suscipit bibendum. Pellentesque ac tempus tellus. Nam interdum vel metus faucibus suscipit. Vestibulum pulvinar ornare dolor, eget efficitur erat. Vivamus viverra euismod risus eget dignissim. Sed dapibus scelerisque cursus. Aliquam fringilla sodales elit a sagittis. Nam mattis consectetur feugiat. Aenean consectetur neque sit amet suscipit scelerisque. Quisque risus odio, facilisis et eros ut, semper pretium felis.</p>
+        </section>
+        <aside>
+            <ul>
+                <li>Item1</li>
+                <li>Item2</li>
+                <li>Item3</li>
+            </ul>
+        </aside>
+        <footer class="bg-dark text-white text-center p-1">
+            <p>Author Sanja Panic, by <a href="https://www.udemy.com/course/learn-css-grid-with-pinegrow/" target="_blank">Udemy course</a></p>
+        </footer>
+    </div>
+</body>
+</html>
