@@ -1,0 +1,73 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    width: 100vw;
+    background-color: #0d98ba;
+}
+nav ul {
+    margin: 0;
+    color: #fff;
+    list-style-type:none;
+    display: flex;
+    justify-content: flex-end;
+}
+nav li {
+    margin: 10px;
+    padding: 0 10px;
+    border-left: 1px solid #0d98ba;
+    border-right: 1px solid #0d98ba;
+    cursor: pointer;
+}
+nav li:nth-child(4) {
+    margin-right: 20px;
+}
+nav li:hover {
+    border-left: 1px solid #0a7a95;
+    border-right: 1px solid #0a7a95;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 200px;
+    background-image: url("./clauds.jpg")
+}
+header h1 {
+    margin: 0;
+    color: #fff;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+main {
+    width: 60vw;
+    margin: auto;
+}
+main p {
+    color: #686868;
+}
+.imageContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 150px;
+    margin-bottom: 10px;
+}
+.imageContainer figcaption {
+    text-align: center;
+}
+.imageContainer img {
+    display: block;
+    margin: auto;
+    width: 150px;
+}
+footer {
+    text-align: center;
+    border-top: 1px solid #0d98ba;
+}
+@media only screen and (max-width: 768px) {
+    main {
+        width: 100vw;
+        padding: 10px;
+    }
+}
