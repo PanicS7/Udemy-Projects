@@ -1,0 +1,92 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+nav, footer {
+    background-color: #072bb7;
+    width: 100vw;
+    height: auto;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 20px;
+    margin: 0;
+}
+nav li {
+    margin: 0 20px;
+}
+nav a {
+    color: #fff;
+}
+nav a:hover {
+    text-decoration: none;
+}
+footer {
+    text-align: center;
+    padding: 2px;
+    color: #fff;
+}
+footer a {
+    color: #fff;
+}
+footer a:hover {
+    text-decoration: none;
+}
+h1 {
+    text-align: center;
+}
+.text {
+    width: 90vw;
+    margin: 0 auto;
+}
+.mainImage {
+    width: 100vw;
+    height: 400px;
+    object-fit: cover;
+}
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.images figcaption {
+    text-align: center;
+    font-style: italic;
+}
+.images img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+#contact {
+    background-color: #d4ebf2;
+    padding-bottom: 50px;
+}
+#contact h1 {
+    margin: 0;
+    padding: 20px 0;
+}
+#contact form {
+    background-color: #fff;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+#contact input {
+    margin: 10px auto;
+    display: block;
+    border-top:0;
+    border-left:0;
+    border-right:0;
+}
+#contact button {
+    display: block;
+    margin: 50px auto 0;
+    color: #fff;
+    background-color: #072bb7;
+    border: 0;
+    padding: 7px;
+    cursor: pointer;
+}

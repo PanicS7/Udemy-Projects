@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Table</title>
+    <style>
+        a {
+            text-align: center;
+            display: block;
+            margin-bottom: 50px;
+        }
+        table {
+            margin: auto;
+            width: 50vw;
+        }
+        table, th, td {
+            border: 1px solid #000;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+        th, td {
+            text-align: left;
+        }
+        .background {
+            background-color: #00ffff;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.udemy.com/course/html-basic-to-advanced/" target="_blank">Udemy Course</a>
+    <table>
+        <tr class="background">
+            <th colspan="3">Invoice #12345ABC</th>
+            <th>18th July 2019</th>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <b>Pay To:</b><br />
+                The Tech Park<br />
+                123 Willow Street<br />
+                Boulevard, LA - 567892
+            </td>
+            <td colspan="2">
+                <b>Customer:</b><br />
+                John Lark<br />
+                Dummy Appartments<br />
+                276 Main Street<br />
+                Boulevard, LA - 567892
+            </td>
+        </tr>
+
+        <tr class="background">
+            <th>Name/Description</th>
+            <th>Qty.</th>
+            <th>MRP</th>
+            <th>Amount</th>
+        </tr>
+        <tr>
+            <td>Byriani</td>
+            <td>3</td>
+            <td>400</td>
+            <td>1200</td>
+        </tr>
+        <tr>
+            <td>Chocolate Shake</td>
+            <td>3</td>
+            <td>200</td>
+            <td>600</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="background"><b>Subtotal: </b></td>
+            <td>1800</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="background"><b>Tax: </b></td>
+            <td>10%</td>
+            <td>180</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="background"><b>Grand Total: </b></td>
+            <td>Rs 1620</td>
+        </tr>
+    </table>
+</body>
+</html>
