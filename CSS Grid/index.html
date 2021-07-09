@@ -3,32 +3,37 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
     <title>CSS Grid</title>
     <style>
         body {
             margin: 0;
         }
+
         .container {
             display: grid;
-            grid-template-columns:5% 1fr 200px 5%;
+            grid-template-columns: 5% 1fr 200px 5%;
             grid-template-rows: 35vh 5% auto auto;
-            grid-gap:20px;
-            grid-template-areas: 
+            grid-gap: 20px;
+            grid-template-areas:
                 "header header header header"
                 ". section . ."
-                ". section aside ." 
+                ". section aside ."
                 ". footer footer .";
         }
+
         header {
             color: #fff;
             grid-area: header;
         }
+
         header h1 {
             text-align: center;
             font-size: 40px;
             padding-top: 50px;
             text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
         }
+
         .img-container {
             position: absolute;
             top: 0;
@@ -36,44 +41,100 @@
             z-index: -1;
             width: 100%;
         }
+
         .img-container img {
             width: 100%;
             height: 50vh;
         }
+
         section {
             grid-area: section;
             background-color: #fff;
             padding: 10px;
             border-left: 1px solid #000;
         }
+
         section .images {
             display: grid;
-            grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
             grid-template-rows: 150px;
             grid-gap: 5px;
         }
+
         section img {
-            width:100px;
-            height:100px;
+            width: 100px;
+            height: 100px;
             object-fit: cover;
         }
+
         aside {
-            grid-area:aside;
+            grid-area: aside;
+            margin-top: 80px;
         }
+
         footer {
             grid-area: footer;
             text-align: center;
         }
-        @media only screen and (max-width: 768px) {
+
+        @media only screen and (max-width: 1024px) {
             .container {
                 display: block;
             }
+
             section {
-                border-left: 0;
+                border: 0;
             }
+
             section .images {
                 grid-template-columns: 1fr 1fr 1fr;
-                grid-template-rows: 150px 150px;
+                grid-template-rows: 250px 250px;
+            }
+
+            section img {
+                width: 250px;
+                height: 250px;
+            }
+            aside {
+                margin-top: 10px;
+            }
+        }
+        @media only screen and (max-width: 768px) {
+            section .images {
+                padding-bottom: 50px;
+                grid-template-columns: 1fr 1fr;
+                grid-auto-rows: 230px;              
+            }
+            section img {
+                width: 230px;
+                height: 230px;
+            }
+        }
+        @media only screen and (max-width: 768px) {
+            section .images {
+                grid-template-columns: 1fr 1fr;
+                grid-auto-rows: 200px;
+            }
+
+            section img {
+                display: block;
+                margin: auto;
+                width: 250px;
+                height: 250px;
+            }
+        }
+        @media only screen and (max-width: 576px) {
+            section .images {
+                padding-bottom: 0;
+                grid-template-columns: 1fr;
+                grid-auto-rows: 250px;
+            }
+
+            section img {
+                align-items: center;
+                justify-items: center;
+                width: 250px;
+                height: 250px;
             }
         }
     </style>
