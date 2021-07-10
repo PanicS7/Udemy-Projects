@@ -1,0 +1,7 @@
+Course: https://www.udemy.com/course/learn-css-and-bootstrap-from-scratch/
+
+Technology:
+	HTML, CSS, Bootstrap
+
+About:
+	Check "design from course" images for more detail of what teacher on udemy was make
