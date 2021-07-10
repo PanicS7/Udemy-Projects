@@ -26,7 +26,7 @@ Responsive site with **HTML**, **CSS** and **JavaScript**
 Responsive site with **HTML** and **CSS**
 
 # Udemy 8
-Drawing using with **HTML** , *CSS** and canvas
+Drawing using with **HTML** , **CSS** and canvas
 
 # Udemy 9
 Responsive site with **HTML, CSS** and **Bootstrap**
