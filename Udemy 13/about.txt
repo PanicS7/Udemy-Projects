@@ -1,0 +1,8 @@
+Course: https://www.udemy.com/course/build-a-holiday-sales-website-using-html-css-and-bootstrap/
+
+Technology:
+	HTML, CSS, JavaScript, Bootstrap, snowstorm.js, animate.css
+
+About:
+	Check "design from course" images for more detail of what teacher on udemy was make
+	Landing web page with animation and snow
