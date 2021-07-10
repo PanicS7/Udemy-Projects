@@ -1,0 +1,9 @@
+Course: 
+	https://www.udemy.com/course/html-css-javascript-build-landing-page-with-modal-forms/
+
+Technology:
+	HTML, CSS, JavaScript
+
+About:
+	Simple landing web page with modal forms
+	Check "design from course" images for more detail of what teacher on udemy was make
