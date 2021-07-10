@@ -1,0 +1,7 @@
+Course: https://www.udemy.com/course/practical-html/
+
+Technology:
+	HTML, CSS, JavaScript
+
+About:
+	Check "design from course" images for more detail of what teacher on udemy was make
