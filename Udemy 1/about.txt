@@ -1,0 +1,9 @@
+Course: 
+	https://www.udemy.com/course/web-development-learn-by-doing-html5-css3-from-scratch-introductory/
+
+Technology:
+	HTML, CSS
+
+About:
+	Check "design from course" image for more detail of what teacher on udemy was make
+	I was make similar project with better color choise, and responsive design
