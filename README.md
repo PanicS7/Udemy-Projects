@@ -1,11 +1,6 @@
-# Udemy-Projects
-All Project are inspired by udemy courses,  all design is designed by course creators i tried to replicate by myself look of site with little changes.
+# Udemy 1
+Simple Responsive web site using **HTML** and **CSS**
 
-<h1>Udemy 1</h1>
-<p>Simple Responsive web site using <b>HTML</b> and <b>CSS</b></p>
+# Udemy 2
+Landing page with modal forms using **HTML, CSS** and **JavaScript**
 
-<br/>
-<h1>Udemy 2</h1>
-<p>Landing page with modal forms using <b>HTML, CSS</b> and <b>JavaScript</b></p>
-
-<br/>
