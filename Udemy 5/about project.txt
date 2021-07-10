@@ -1,0 +1,8 @@
+Course: https://www.udemy.com/certificate/UC-OA5WQSHL/
+
+Technology:
+	HTML, CSS
+
+About:
+	Check "design from course" images for more detail of what teacher on udemy was make
+	
