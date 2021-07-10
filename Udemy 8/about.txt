@@ -1,0 +1,9 @@
+Course: https://www.udemy.com/course/all-the-way-css-the-complete-css-adventure/
+
+Technology:
+	HTML, CSS, (canvas)
+
+About:
+	Check "design from course" images for more detail of what teacher on udemy was make
+	This is my colection of CSS and canvas draw
+	Bear and Terminal are inspired by this course, for other i was looked on internet for some images
