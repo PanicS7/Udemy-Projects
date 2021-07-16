@@ -2,7 +2,7 @@ All projects are inspired by udemy courses.
 
 All design belong to course creator, i only do coding part as practice.
 
-All images are downloaded from course resourse or [https://unsplash.com/] - free images resourse
+All images are downloaded from course resourse or [Unsplash](https://unsplash.com/) - free images resourse
 
 # Udemy 1
 Responsive page using **HTML** and **CSS**
