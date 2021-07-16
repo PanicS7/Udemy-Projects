@@ -44,8 +44,8 @@ Responsive page using **HTML** and **CSS**
 Responsive page using **HTML** and **CSS** 
 
 # Udemy 13
-Responsive page using **HTML** and **CSS** 
+Responsive page using **HTML**, **CSS**, **JavaScript**, **Bootstrap**, **snowstorm.js** and  **animate.css**
 
 # Udemy 14
-Responsive page using **HTML**, **CSS**, **JavaScript**, **Bootstrap**, **snowstorm.js** and  **animate.css**
+Responsive page using **HTML**, **CSS/SCSS**, **JavaScript/JQuery**, **Bootstrap**, and  **animate.css**
 
