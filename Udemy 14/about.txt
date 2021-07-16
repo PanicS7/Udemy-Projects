@@ -1,0 +1,8 @@
+Course: https://www.udemy.com/course/make-a-bootstrap-website-project-2-css-html-javascript/
+
+Technology:
+	HTML, CSS/SCSS, JavaScript/JQuery, Bootstrap, animate.css
+
+About:
+	Check "design from course" images for more detail of what teacher on udemy was make
+	Landing web page of mobile app with animation on scroll
